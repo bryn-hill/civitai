@@ -141,7 +141,6 @@ export function TrendingTags() {
             <Link
               key={tag.id}
               href={!active ? `/?tag=${encodeURIComponent(tag.name)}` : router.asPath}
-              as={router.asPath}
               shallow
             >
               <Button
